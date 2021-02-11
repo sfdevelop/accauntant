@@ -3,6 +3,12 @@ a {
         text-decoration: none;
     }
 }
+.toast{
+    z-index: 2000;
+    .toast-body{
+        color: $white;
+    }
+}
 
 .red {
     background-color: red;
