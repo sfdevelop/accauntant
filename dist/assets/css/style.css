@@ -8967,6 +8967,7 @@ a.close.disabled {
     margin-bottom: 1rem;
     list-style: none;
     border-radius: 0.25rem;
+    padding-left: 0px;
 }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -9020,9 +9021,6 @@ a.close.disabled {
 
 .page-link:focus {
     z-index: 3;
-    outline: 0;
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(84, 121, 251, 0.25);
-    box-shadow: 0 0 0 0.2rem rgba(84, 121, 251, 0.25);
 }
 
 .page-item:first-child .page-link {
@@ -9038,9 +9036,8 @@ a.close.disabled {
 
 .page-item.active .page-link {
     z-index: 3;
-    color: #fff;
-    background-color: #5479FB;
-    border-color: #5479FB;
+    color: #2a3d7e;
+    background-color: #fff;
 }
 
 .page-item.disabled .page-link {
