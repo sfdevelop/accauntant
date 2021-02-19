@@ -8958,6 +8958,131 @@ a.close.disabled {
     pointer-events: none;
 }
 
+.breadcrumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: 0.5rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: "/";
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+    text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #000;
+    background-color: #fff;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #093ef9;
+    text-decoration: none;
+    color: #5479FB;
+}
+
+.page-link:focus {
+    z-index: 3;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(84, 121, 251, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(84, 121, 251, 0.25);
+}
+
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #5479FB;
+    border-color: #5479FB;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.pagination-lg .page-link {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.pagination-lg .page-item:first-child .page-link {
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+
+.pagination-lg .page-item:last-child .page-link {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.pagination-sm .page-link {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.pagination-sm .page-item:first-child .page-link {
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
+
+.pagination-sm .page-item:last-child .page-link {
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+}
+
 /* Slider */
 .slick-slider {
     position: relative;
@@ -9519,6 +9644,14 @@ h2 {
     .slider__box img {
         max-width: 120%;
     }
+
+    .mt-120 {
+        margin-top: 30px !important;
+    }
+
+    h2 {
+        line-height: 5px !important;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -9532,6 +9665,10 @@ h2 {
 
     .slider p {
         font-size: 18px !important;
+    }
+
+    .mt-120 {
+        margin-top: 30px !important;
     }
 }
 
@@ -9552,10 +9689,22 @@ h2 {
         font-size: 30px;
         text-align: center;
     }
+
+    .mt-120 {
+        margin-top: 30px !important;
+    }
 }
 
 a:hover {
     text-decoration: none;
+}
+
+.mt-120 {
+    margin-top: 80px;
+}
+
+.page-item .active {
+    color: #2a3d7e;
 }
 
 .toast {
@@ -9773,4 +9922,35 @@ footer .copyrting a:hover {
 
 footer .copyrting i {
     font-size: 20px;
+}
+
+.text h3 {
+    font-family: Philosopher;
+    font-weight: bold;
+    font-size: 25px;
+    color: #2a3d7e;
+}
+
+.text h3::before {
+    display: inline-block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url(../i/logo_little.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text ol li, .text ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.text a {
+    text-decoration: underline;
+}
+
+.text strong {
+    font-style: italic;
 }

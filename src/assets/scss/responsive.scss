@@ -12,6 +12,13 @@
             max-width: 120%;
         }
     }
+    .mt-120{
+        margin-top: 30px!important;
+    }
+    h2{
+        line-height: 5px!important;
+    }
+
 }
 
 // --------------------------------------------576
@@ -28,6 +35,9 @@
         p{
             font-size: 18px!important;
         }
+    }
+    .mt-120{
+        margin-top: 30px!important;
     }
 }
 
@@ -49,5 +59,8 @@
     h2{
         font-size: 30px;
         text-align: center;
+    }
+    .mt-120{
+        margin-top: 30px!important;
     }
 }

@@ -3,9 +3,21 @@ a {
         text-decoration: none;
     }
 }
-.toast{
+
+.mt-120 {
+    margin-top: 80px;
+}
+
+.page-item {
+    .active {
+        color: #2a3d7e;
+    }
+}
+
+.toast {
     z-index: 2000;
-    .toast-body{
+
+    .toast-body {
         color: $white;
     }
 }
@@ -198,8 +210,10 @@ footer {
             }
         }
     }
-    .copyrting{
+
+    .copyrting {
         border-top: 1px solid $white;
+
         a {
             color: $white;
 
@@ -207,8 +221,41 @@ footer {
                 color: $white;
             }
         }
-        i{
+
+        i {
             font-size: 20px;
         }
+    }
+}
+
+.text {
+    h3 {
+
+        font-family: Philosopher;
+        font-weight: bold;
+        font-size: 25px;
+        color: #2a3d7e;
+        &::before{
+            display: inline-block;
+            content: '';
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            background-image: url(../i/logo_little.png);
+            background-position: center ;
+            background-repeat: no-repeat;
+        }
+    }
+    ol,ul{
+        li{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+    a{
+        text-decoration: underline;
+    }
+    strong{
+        font-style: italic;
     }
 }
