@@ -9716,7 +9716,7 @@ a:hover {
 }
 
 .mt-120 {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .page-item .active {
@@ -9780,6 +9780,8 @@ a:hover {
 
 .menu {
     background-color: #fff;
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .menu ul {
@@ -9994,6 +9996,12 @@ footer .copyrting i {
 .clients__box img {
     -ms-flex-item-align: center;
     align-self: center;
+}
+
+.contacts {
+    background: url(../i/big_logo.png);
+    background-repeat: no-repeat;
+    background-position: left top;
 }
 
 .contacts__box {

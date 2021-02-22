@@ -5,7 +5,7 @@ a {
 }
 
 .mt-120 {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .page-item {
@@ -66,6 +66,10 @@ a {
 
 .menu {
     background-color: $white;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    
+    
+
 
     ul {
         list-style: none;
@@ -290,6 +294,9 @@ footer {
 }
 
 .contacts {
+    background: url(../i/big_logo.png);
+    background-repeat: no-repeat;
+    background-position: left top;
     &__box {
         background: #fff;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
