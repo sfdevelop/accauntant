@@ -10037,10 +10037,35 @@ footer .copyrting i {
     width: 30px;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     border-radius: 10px;
     background: #fff;
     -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
     border: none;
+}
+
+.about strong {
+    color: #5479FB;
+}
+
+.about h4 {
+    font-family: Philosopher;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #09355b;
+}
+
+.about p {
+    margin-bottom: 0;
+}
+
+.about .text p {
+    margin-bottom: 1rem;
+}
+
+.about .down .circle {
+    top: -15px;
 }

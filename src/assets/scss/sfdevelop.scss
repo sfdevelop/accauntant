@@ -67,8 +67,8 @@ a {
 .menu {
     background-color: $white;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    
-    
+
+
 
 
     ul {
@@ -297,6 +297,7 @@ footer {
     background: url(../i/big_logo.png);
     background-repeat: no-repeat;
     background-position: left top;
+
     &__box {
         background: #fff;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
@@ -317,25 +318,60 @@ footer {
                 font-size: 18px;
                 text-align: center;
                 color: #09355b;
-                a{
+
+                a {
                     color: #2a3d7e;
                 }
             }
         }
     }
-    h3{
-        img{
+
+    h3 {
+        img {
             width: 30px;
         }
     }
 }
-.form-group{
-    input, textarea{
+
+.form-group {
+
+    input,
+    textarea {
         border-radius: 10px;
         background: #fff;
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
         // padding-top: 23px;
         // padding-bottom: 23px;
         border: none;
+    }
+}
+
+.about {
+    strong {
+        color: $blue;
+    }
+
+    h4 {
+        font-family: Philosopher;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        color: #09355b;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .text {
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .down {
+        .circle {
+            top: -15px;
+        }
     }
 }
