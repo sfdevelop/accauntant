@@ -121,8 +121,41 @@ a {
         }
     }
 }
-
+.over{
+    &::before{
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #09355b86; 
+        
+        opacity: 0;
+        position: absolute;
+        transition: .1s ease-out;
+        transition-delay: 0.1s;
+    }
+    &::after{
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url(../i/logo_little_white.svg), url(../i/left_back.svg), url(../i/right_back.svg); 
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: center center, 5% 5%, 95% 95%;
+        opacity: 0;
+        position: absolute;
+        transition: .1s ease-out;
+        transition-delay: 0.1s;
+    }
+    &:hover::before,
+    &:hover::after{
+        opacity: 1;
+    }
+}
 .main_advantages {
+
     .line_center {
         border-top: 2px solid $blue;
         width: 200px;
@@ -374,4 +407,16 @@ footer {
             top: -15px;
         }
     }
+}
+.modal{
+    .modal-content{
+    background-image: url(../i/modal_back.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    }
+   .modal-title{
+       img{
+           width: 30px;
+       }
+   } 
 }
